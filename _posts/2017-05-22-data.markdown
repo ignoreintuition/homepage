@@ -1,0 +1,11 @@
+---
+layout: post
+title: Article - Introduction to Data Management and Visualization in JavaScript
+date: 2017-05-22 00:00:00 +0300
+description: Introduction to Data Management and Visualization in JavaScript
+img: data.jpg # Add image post (optional)
+tags: [Js, Article, Node.js, Testing] # add tag
+---
+Abstract - In order to create meaningful visual representations of our data, and the complimentary tools to analyze said data, it is important to have a well-conceived data management framework. This requires the right backend storage, a paradigm for data access, and an engaging front-end for presentation and analysis. There are a variety of tools that you can use to build a data access stack in your web applications which we will be exploring here ....
+
+[Full Article on Sitepoint](https://www.sitepoint.com/data-management-visualization-javascript/)

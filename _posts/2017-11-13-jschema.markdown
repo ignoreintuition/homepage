@@ -1,0 +1,35 @@
+---
+layout: post
+title: Library - jschema.js
+date: 2017-11-13 00:00:00 +0300
+description: Data Modeling in JavaScript - jSchema is a framework for modeling data in JavaScript.
+img: jschema2.png
+tags: [Js, library, data, framework, database, schema] # add tag
+---
+
+## Data Modeling in JavaScript
+jschema.js is a framework for modeling data in JavaScript and Node.  By using fundamental data modeling principles similar to what you would see in traditional SQL based databases you are able to pull multiple datasets into in a common schema.  Datasets contain their own metadata for data type, primary-key / forign key relationships allowing you to quickly and easily join datasets together.  API makes it easy to aggregate, join, and subset making management of data easier than ever in your applications.
+
+## Why Model Data in JavaScript?
+Having worked extensively with datasets in JavaScript it can become increasingly cumbersome to manage across complex user experiences.  By encapsulating all of your data into a single object jschema.js retains the metadata about the tables providing a simple interface for accessing, manipulating, updating, and slicing it.  Data is immutable so the original dataset remains pure.  
+
+## Installation
+Install via NPM `npm install jschema.js`.
+
+## Key features
+jschema.js allows you to work with any tabular data in your application.  The api allows you to add, join, drop, sort, group by, filter, update, and insert records into any table added to your schema.  Generated tables will be added to a work namespace for simple garbage collection.  Refer to the [NPM](https://www.npmjs.com/package/jschema.js) or
+[Github](https://github.com/ignoreintuition/jSchema) pages for a full details on the implementation.
+
+jschema.js employs ES6 syntax using Babel to transpile for older browsers and older Node LTS versions.  Code is tested using Mocha and JavaScript assertion library to ensure long term compatibility.  
+
+## Dependencies
+jschema.js uses requirejs to modularly load the library and is included in the package.json.  require.js can be moved to the lib directory of your project. All test scripts are written for Mocha.  See package.json in the repository for a full list of dependencies.  
+
+## Demo
+A live demo can be found on here: [live demo](http://resurgencewebdesign.com/refugee/)
+
+## Downloads
+[NPM](https://www.npmjs.com/package/jschema.js)|
+[Github](https://github.com/ignoreintuition/jSchema)
+
+<a href="https://github.com/ignoreintuition/jSchema"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>

@@ -1,0 +1,40 @@
+title: Resurgence Web Design
+description: > # this means to ignore newlines until "baseurl:"
+  Resurgence Web Design is dedicated to building tutorials, lessons, and
+  tools that help make development and design of web projects easier and more accessible. We encourage
+  you to check out our library of Youtube videos, blog posts, and code repositories to get started.
+permalink: ':title/'
+url: "http://resurgencewebdesign.com" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: "ignoreintuition" #if your site has a twitter account, enter it here
+
+# Author Settings
+author: Resurgence Web Design  # add your name
+author-img: logo.png # add your photo
+about-author: Tutorials, libraries, and tools for the modern web
+twitter: ignoreintuition
+github: ignoreintuition # add your Github handle
+email: ignoreintuition@gmail.com
+youtube: ignoreintuition2
+codepen: ignoreintuition
+codepen: ignoreintuition
+medium: ignoreintuition
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins_dir:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 6
+paginate_path: "/page/:num"
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]

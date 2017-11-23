@@ -1,0 +1,11 @@
+---
+layout: post
+title: Article - JavaScript - Chasing the Elusive White Rabbit
+date: 2016-12-11 00:00:00 +0300
+description: JavaScript - Chasing the Elusive White Rabbit
+img: rabbit.jpg # Add image post (optional)
+tags: [Js, Article ] # add tag
+---
+Abstract - As a front-end developer you have undoubtedly felt this way. Between the myriad of frameworks, plugins, and tools at your disposal it can feel as though web development is moving so quickly that it takes all your effort just to stay relevant...
+
+[Full Article on Front End Weekly](https://medium.com/front-end-hacking/javascript-chasing-the-elusive-white-rabbit-d20650fb6847)

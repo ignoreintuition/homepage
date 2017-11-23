@@ -1,0 +1,11 @@
+---
+layout: post
+title: Article - ES6 Tip of the Day
+date: 2017-03-11 00:00:00 +0300
+description: Some daily tips on ES6
+img: tips.png # Add image post (optional)
+tags: [Js, Article, Es6] # add tag
+---
+Abstract - Last week I started publishing the “ES6 Tip of the Day” on twitter. We’ll see if it catches on. Nonetheless, I thought it would be nice to put them all out here in one blog post...
+
+[Full Article on Front End Weekly](https://medium.com/front-end-hacking/es6-tips-of-the-day-71f6ddd460c)

@@ -1,0 +1,11 @@
+---
+layout: post
+title: Article - Do We Need Tech Leads
+date: 2016-12-05 00:00:00 +0300
+description: Do we need tech leads
+img: techlead.png # Add image post (optional)
+tags: [Development, Management] # add tag
+---
+Abstract - This is a response to a blog post recently disputing the need for a tech lead on your projects to which I respectfully disagree. Teams and projects that range in size and scope can have varying degrees of success with technical leads but, IMHO, it is all but the smallest of teams that can function without some technical leadership...
+
+[Full Article on Frontend Weekly](https://medium.com/@IgnoreIntuition/do-you-need-tech-leads-5ed46bc70fb2)

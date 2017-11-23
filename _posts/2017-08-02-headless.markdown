@@ -1,0 +1,11 @@
+---
+layout: post
+title: Article - Getting Started with Headless Chrome in Node
+date: 2017-08-02 00:00:00 +0300
+description: Quicktip - Getting Started with Headless Chrome in Node
+img: headless.jpg # Add image post (optional)
+tags: [Js, Article, Node.js, Testing] # add tag
+---
+Abstract - Oftentimes in our line of work we need to be able to replicate a user journey repeatedly to make sure that our pages are offering a consistent experience as we make changes to our site. Critical to being able to accomplish this consistently and conveniently are libraries that allow us to script these types of tests, so that we can run assertions against them and maintain documentation around the results. Enter headless browsers: ...
+
+[Full Article on Sitepoint](https://www.sitepoint.com/headless-chrome-node-js/)

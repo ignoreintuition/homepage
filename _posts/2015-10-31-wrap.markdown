@@ -1,0 +1,11 @@
+---
+layout: post
+title: Demo - Wrapping Text Around an Image
+date: 2015-10-31 00:00:00 +0300
+description: How to wrap text around an image
+img: wrap.jpg # Add image post (optional)
+tags: [Demo, Css] # add tag
+---
+Created a polygon in CSS to wrap around the edge of an image. Actually gives a nice effect
+
+[Demo on Codepen](https://codepen.io/ignoreintuition/pen/PPmGBa)

@@ -1,0 +1,15 @@
+---
+layout: post
+title: Video Series - HTML5 Features and Functionality
+date: 2017-06-28 00:00:00 +0300
+description: HTML5 Features and Functionality
+img: html5.jpg # Add image post (optional)
+tags: [Js, Es6, Html5] # add tag
+---
+Series in which we cover:
+* Multi-threaded web applications with web workers
+* Progressive Web Apps with Local Storage
+* Drag and Drop API
+* Arrow Functions
+
+[Video Series on YouTube](https://www.youtube.com/watch?v=2dsLpJ4dHHI&list=PLLjRRlzL9MtBXCRr-jTdsBpI6RP1Qjvo1)
