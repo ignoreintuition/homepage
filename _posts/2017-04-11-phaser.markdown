@@ -4,7 +4,7 @@ title: Video Series - How to Make Games for the Web
 date: 2017-04-11 00:00:00 +0300
 description: Make Games for the Web
 img: games.png # Add image post (optional)
-tags: [Js, library, Phaser] # add tag
+tags: [Js, Library, Phaser, Series] # add tag
 ---
 Learn how to design and code games for the web using our Phaser JavaScript tutorial series.  Create games in the browser that are cross-platform compatible and follow modern web standards.
 

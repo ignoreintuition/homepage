@@ -4,7 +4,7 @@ title: Library - jschema.js
 date: 2017-11-13 00:00:00 +0300
 description: Data Modeling in JavaScript - jSchema is a framework for modeling data in JavaScript.
 img: jschema2.png
-tags: [Js, library, data, framework, database, schema] # add tag
+tags: [Js, Library] # add tag
 ---
 
 ## Data Modeling in JavaScript

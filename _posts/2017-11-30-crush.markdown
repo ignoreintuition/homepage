@@ -1,0 +1,14 @@
+---
+layout: post
+title: Tutorial - Crushing Data In JavaScript (Series)
+date: 2017-11-30 00:00:00 +0300
+description: Crushing Data In JavaScript is a three part series on how to manage data in JS
+img: mortar.png # Add image post (optional)
+tags: [Js, Article, Data, Series] # add tag
+---
+Abstract - The breadth of data we have accessible to ourselves in the modern world is astounding. Data, however, is generally useless in it’s raw form. Although we clamor to get our hands on sweet, sweet datasets the real money is in the analysis of that data. Taking it from it’s raw, tabular form and compressing it pictorial images that can be convey a message visually to readers...
+
+* [Part 1](https://medium.com/@IgnoreIntuition/crushing-data-in-javascript-9d728b94c051)
+* [Part 2](https://medium.com/@IgnoreIntuition/crushing-data-in-javascript-part-2-51d775df57d2)
+* [Part 3](https://medium.com/@IgnoreIntuition/crushing-data-in-javascript-part-3-5de3af4351b9)
+* [Odds and Ends](https://medium.com/@IgnoreIntuition/crushing-data-in-javascript-odds-and-ends-aa7939463197)

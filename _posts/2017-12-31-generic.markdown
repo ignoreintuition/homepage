@@ -1,0 +1,12 @@
+---
+layout: post
+title: Game - Generic Space Shooter
+date: 2017-12-31 00:00:00 +0300
+description:
+img: phaser.png # Add image post (optional)
+tags: [Js, Game] # add tag
+---
+A demo of a turn based shooter game using the Phaser library.
+
+* [Phaser](http://phaser.io/)
+* [Demo](/generic/)

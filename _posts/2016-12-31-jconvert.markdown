@@ -3,8 +3,8 @@ layout: post
 title: Library - jconvert
 date: 2016-12-31 00:00:00 +0300
 description: convert is a jQuery plugin that you can call on a selector to convert from one unit to another.
-img: convert.jpg # Add image post (optional)
-tags: [Js, library] # add tag
+img: convert.png # Add image post (optional)
+tags: [Js, Library] # add tag
 ---
 Jconvert is a jQuery plugin that you can call on a selector to convert from one unit to another. Supports weight, length, volume, and temperature.
 

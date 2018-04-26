@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Video Series - Building Charts and Graphs for the Web
+title: Video - Building Charts and Graphs for the Web (series)
 date: 2017-03-27 00:00:00 +0300
 description: Building Charts and Graphs for the Web
 img: d3.jpg # Add image post (optional)
-tags: [Js, library] # add tag
+tags: [Js, Library, Series] # add tag
 ---
 In which we cover using D3 to modify the DOM and build charts and graphs on the web.  Learn how to turn data into beautiful graphs and charts for the web using Javascript, D3, and HTML5.
 

@@ -3,9 +3,8 @@ layout: post
 title: Utility - Ascii Spinner
 date: 2017-11-20 00:00:00 +0300
 description: Ascii Spinner is a simple spinner that you can add to any application to indicate progress with very little overhead.
-
-img: spinner.gif
-tags: [Js, utility] # add tag
+img: top.png
+tags: [Js, Utility] # add tag
 ---
 
 # Ascii Spinner

@@ -1,0 +1,14 @@
+---
+layout: post
+title: Plugin - d3vue A plugin for D3 in VueJS
+date: 2018-04-07 00:00:00 +0300
+description:
+img: d3vue.png # Add image post (optional)
+tags: [Js, Plugin, Vue] # add tag
+---
+d3vue is a plugin for VueJS 2 that allows you to take data from your Vue instance and bind that data to a D3 v4 data visualization. d3vue uses the v4 merge syntax so when you can call the same function in your lifecycle events (i.e. mounted, beforeUpdate).
+
+* [Demo](https://resurgencewebdesignc.ipage.com/d3-vue-example/)
+* [Fork on Github](https://github.com/ignoreintuition/d3vue)
+
+<a href="https://github.com/ignoreintuition/d3vue"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>

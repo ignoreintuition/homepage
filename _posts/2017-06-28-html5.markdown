@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Video Series - HTML5 Features and Functionality
+title: Video - HTML5 Features and Functionality (Series)
 date: 2017-06-28 00:00:00 +0300
 description: HTML5 Features and Functionality
-img: html5.jpg # Add image post (optional)
-tags: [Js, Es6, Html5] # add tag
+img: html5.png
+tags: [Js, Es6, Html5, Series] 
 ---
 Series in which we cover:
 * Multi-threaded web applications with web workers

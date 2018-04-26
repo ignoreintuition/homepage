@@ -10,7 +10,7 @@ site-twitter: "ignoreintuition" #if your site has a twitter account, enter it he
 # Author Settings
 author: Resurgence Web Design  # add your name
 author-img: logo.png # add your photo
-about-author: Tutorials, libraries, and tools for the modern web
+about-author: Tutorials, libraries, and tools for the modern web <br> <a href="/about">What is RWD?</a>
 twitter: ignoreintuition
 github: ignoreintuition # add your Github handle
 email: ignoreintuition@gmail.com

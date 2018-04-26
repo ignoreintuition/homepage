@@ -4,7 +4,7 @@ title: Article - Data Hopping From SQL to GraphQL to JSON
 date: 2017-09-26 00:00:00 +0300
 description: Data Hopping From SQL to GraphQL to JSON
 img: hop.jpg # Add image post (optional)
-tags: [Js, Article, SQL, GraphQL] # add tag
+tags: [Js, Article, GraphQL] # add tag
 ---
 Abstract - CERN, the European Organization for Nuclear Research, claimed their Large Hadron Collider collects 10 of petabytes of data per year. The Vatican Apostolic Database is around 2.9 petabytes. If there is one thing that can be said about databases: they scale. They scale really well. Although NoSQL, Hadoop, and their brethren are fantastic choices for storing data relevant to your apps there is still, undoubtedly, validity behind traditional ...
 

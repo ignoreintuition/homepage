@@ -1,0 +1,11 @@
+---
+layout: post
+title: App - Really Simple Movie Database
+date: 2017-12-31 00:00:00 +0300
+description:
+img: movie.png # Add image post (optional)
+tags: [Js, App, React] # add tag
+---
+Title says it all... A really simple app for accessing information of popular movies.
+
+* [App](/movies/app/)

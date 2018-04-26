@@ -1,0 +1,11 @@
+---
+layout: post
+title: Utility - Mr Clean Up
+date: 2017-12-31 00:00:00 +0300
+description:
+img: cleanup.png # Add image post (optional)
+tags: [Js, Utility] # add tag
+---
+A simple tool for cleaning up unwanted markup and converting it to plain text
+
+* [App](/mr-clean-up/)
