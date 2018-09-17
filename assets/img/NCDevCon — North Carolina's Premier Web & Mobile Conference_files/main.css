@@ -1,0 +1,151 @@
+
+/* overwrite bootstrap */
+.navbar-default {
+    background-color: #ffffff; 
+    border-color: #ffffff; 
+}
+
+fieldset > h4 {margin-top: 3em; text-transform: uppercase;}
+
+/* RESPONSIVE STUFF */
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+        #masthead h1 {font-size: 200%;}
+        #masthead > p {font-size: 75%;}
+        #homepromo > .feed {font-size: 1.5em;}
+        #homepromo > .blurb {font-size: .8em;}
+        #homepromo > p {font-size: 1em;}
+        #homepromo {background-image: url('../img/home-sm.jpg');}
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+        #masthead h1 {font-size: 250%;}
+        #masthead > p {font-size: 80%;}
+        #homepromo > .feed {font-size: 3em;}
+        #homepromo > .blurb {font-size: 1.5em;}
+        #homepromo > p {font-size: 1em;}
+        #homepromo {background-image: url('../img/home.jpg');}
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+        #masthead h1 {font-size: 275%;}
+        #masthead > p {font-size: 90%;}
+        #homepromo > .feed {font-size: 4em;}
+        #homepromo > .blurb {font-size: 2em;}
+        #homepromo > p {font-size: 1em;}
+        #homepromo {background-image: url('../img/home.jpg');}
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+        #masthead h1 {font-size: 300%;}
+        #masthead > p {font-size: 100%;}
+        #homepromo > .feed {font-size: 5em;}
+        #homepromo > .blurb {font-size: 2.5em;}
+        #homepromo > p {font-size: 1.5em;}
+        #homepromo {background-image: url('../img/home.jpg');}
+}
+
+
+/*HEADER AREA*/
+#masthead {
+    float: left;
+    overflow: hidden;
+    padding-left: 75px;
+    background-image: url("../img/ncdevcon-logo.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#masthead {display: block; height: 100px;}
+#masthead h1 {font-family: 'Lato', sans-serif; margin: 0; color: #333;}
+#masthead h1 > a {color: #000;}
+#masthead p {color: #999; margin: 0;}
+#masthead p > strong {color: #666;}
+
+.registernow a {font-weight: bold; margin-top: 3em; margin-right: 2em;}
+
+/*NAVIGATION*/
+.page-navigation {margin-top: 2em;}
+
+
+/*post meta block with date, comments and tags*/
+.post-meta {font-size: 95%;}
+.meta-date {padding-right: 1em;}
+
+
+/*SIDEBAR*/ 
+#sidebar h2 {font-size: 140%; line-height: 20px}
+.widget {padding-bottom: 1em;}
+
+.well {
+	background: -moz-linear-gradient(top,  rgba(229,229,229,0.65) 0%, rgba(234,234,234,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(229,229,229,0.65) 0%,rgba(234,234,234,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(229,229,229,0.65) 0%,rgba(234,234,234,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6e5e5e5', endColorstr='#00eaeaea',GradientType=0 ); /* IE6-9 */
+}
+
+
+/*HOMEPAGE*/
+#homepromo { 
+	margin: 2em 0;
+ 	background-repeat: no-repeat;
+ 	background-position: bottom right;
+ 	background-color: #f8f8f8;
+}
+
+#homepromo > .feed { font-family: 'Sigmar One', cursive; line-height: 1em;}
+#homepromo > .blurb { font-family: 'Sue Ellen Francisco', cursive; color: #336699;}
+
+
+/* FOOTER */
+footer {margin-top: 3em; margin-bottom: 1em;}
+footer li {padding: 1em;}
+
+/* TESTIMONIALS */
+.buzz {display:none;}
+.testimonials {
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+}
+
+
+/* SCHEDULE */
+#schedule {font-size: 100%; table-layout: fixed;}
+#schedule td {border: 1px solid #ccc; font-family: Verdana, Arial,sans-serif; font-size: 80%; padding: 4px; line-height: 1em;}
+#schedule td strong {font-family: Arial,sans-serif; font-size: 110%; line-height: 1em;}
+#schedule a {color: #369; text-decoration: underline;}
+
+.time {font-weight: bold; font-family: Verdana,Arial,sans-serif; font-size: 90%; background-color: #666; color: #fff;}
+
+.reg {background-color: #F4F8F0; color: #333; text-align: center;}
+
+.cf-hdr {background-color: #292523; color: #fff;}
+.cf  {background-color: #D4D3D3; color: #333;}
+
+.web-hdr {background-color: #61513B; color: #fff;}
+.web  {background-color: #DFDCD8; color: #333;}
+
+.ria-hdr {background-color: #8C6842; color: #fff;}
+.ria  {background-color: #DDD2C6; color: #333;}
+
+.mob-hdr {background-color: #B0B89E; color: #333;}
+.mob  {background-color: #E0EBD6; color: #333;}
+
+.lab-hdr {background-color: #7C8A80; color: #fff;}
+.lab  {background-color: #E5E8E6; color: #333;}
+
+.keynote {background-color: #999; color: white;}
+
+.sched-header1 {background-color:#333; color:#fff; font-family: Tahoma,Arial,sans-serif; font-size: 110%; border-top: 5px solid #fff;}
+.sched-header1 td  {padding: 2px; border-top: 7px solid #fff;}
+.sched-header2 td  {font-weight: bold; text-align: center; padding: 2px;}
+.sched-header2 { background-color:#ccc; color:#333; font-size: 90%; text-transform: uppercase;font-family: Verdana,Arial,sans-serif;}
+
+.cf-hdr, .web-hdr, .ria-hdr, .mob-hdr {width: 20%;}
+.lab-hdr {width: 15%;}
+
+#schedcontent {
+	float: left;
+	width: 100%;
+	padding: 20px 30px 20px 0;
+}

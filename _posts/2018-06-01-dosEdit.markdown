@@ -1,0 +1,11 @@
+---
+layout: post
+title: App - DOS Edit
+date: 2018-06-01 00:00:00 +0300
+description:
+img: dosEdit.png # Add image post (optional)
+tags: [Js, App] # add tag
+---
+A simple Text Editor styled to look like DOS Edit
+
+* [App](https://github.com/ignoreintuition/dosEdit)

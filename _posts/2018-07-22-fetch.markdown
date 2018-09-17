@@ -1,0 +1,15 @@
+---
+layout: post
+title: Article - What the Fetch
+date: 2018-07-22 00:00:00 +0300
+description: Primer on the browser's fetch API
+img: fetch.jpg # Add image post (optional)
+tags: [Js, Article, Es6] # add tag
+---
+Abstract - This fetch API is pretty nifty. If you have worked with JavaScript's XMLHttpRequests in the past or if you had to rely on libraries like jQuery or Axios you will really appreciate what fetch does. Fetch is:
+
+* Easy to set up
+* Promise based
+* Configurable
+
+[Full Article on Dev.to](https://dev.to/ignoreintuition/what-the-fetch-3g58)

@@ -1,0 +1,12 @@
+---
+layout: post
+title: Article - Binding Data to Charts using Vue Components and D3
+date: 2018-09-15 00:00:00 +0300
+description: Binding Data to Charts using Vue Components and D3
+img: vue-component.jpg # Add image post (optional)
+tags: [D3, Vue, Js] # add tag
+---
+Abstract: There is nothing more satisfying than making a change and seeing that change propagated through somewhere immediately. Lately, I have been experimenting a lot with integrating D3 charts into Vue. I tried doing this with helpers, directives and, most recently, with components. Since Vue is declaring components to be their recommended implementation method for reusable components I am going to be focusing here on that version.
+
+[Link to article on dev.to](https://dev.to/ignoreintuition/binding-data-to-charts-using-vue-components-and-d3-4i27)
+

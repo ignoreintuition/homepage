@@ -1,0 +1,13 @@
+---
+layout: post
+title: Plugin - v-chart-plugin A Vue 2.x component plugin for charts
+date: 2018-09-16 00:00:00 +0300
+description: A Vue 2.x component plugin for charts
+img: v-chart.png # Add image post (optional)
+tags: [D3, Vvue, Js] # add tag
+---
+A fully customizable plugin for adding charts to your Vue.js application using D3.  The purpose of this plugin is to provide a standardized component that binds to your data and updates reactively when the data changes.
+
+[Fork on Github](https://github.com/ignoreintuition/v-chart-plugin)
+
+<a href="https://github.com/ignoreintuition/v-chart-plugin"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
