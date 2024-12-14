@@ -1,0 +1,71 @@
+---
+layout: post
+title: When and How to Use the Facade Pattern
+date: 2024-02-01 00:00:00 +0300
+description: When and How to Use the Facade Pattern
+img: facade.jpg # Add image post (optional)
+tags: [Js, Node, Js] # add tag
+---
+In conversational English, the term facade has a bad rep. We say, that when someone is fake or untrustworthy, they have a facade. I think this has done very little for the humble facade pattern. Without even knowing what it is you are already judging it. 
+
+Let's do this pattern justice and look at when we should use it. We have all worked with legacy code.  Let's say, for instance, you have this piece of code that tunes a guitar:
+
+```
+function Guitar(highE, B, G, D, A, lowE) {
+  return {
+    play: function(){
+      console.log("🎶")
+    }
+  }
+}
+```
+Nifty, right? We new up Guitar, which gives us back a perfectly tuned guitar that we can play(). Notice, though, that we need to pass it six variables, each corresponding with the pitches for each of the strings. No problem, we're rock stars, we know exactly how to tune a guitar.
+
+But now the rest of the band comes along and, guess what, they have their instruments that they need tuned up and ready to go. 
+```
+
+function Bass(G, D, A, E) {
+  return {
+    play: function(){
+      console.log("🎶")
+    }
+  }
+}
+
+function Trumpet(tuningSlide) {
+  return {
+    play: function(){
+      console.log("🎶")
+    }
+  }
+}
+
+function Piano(toolboxFullOfStuff) {
+  return {
+    play: function(){
+      console.log("🎶")
+    }
+  }
+}
+```
+You can probably handle the bass guitar but what the heck is a tuning slide and what is the pianist handing you an entire toolbox for? So, now you need to do something.  You've got to hand this over to your roadies to get you finely tuned instruments and there is no way you can teach them the intricacies of each of these instruments.
+
+In comes the facade pattern. We can create one interface and, through that one interface, we can new up any one of these instruments. Then, within the context of the pattern, we can handle all the nitty-gritty details of each of the instrument tuning requirements:
+
+```
+function Instrument(instrument) {
+  const instruments = {
+    piano: Piano,
+    guitar: Guitar,
+    bass: Bass,
+    trumpet: Trumpet
+  }
+  return new instruments[instrument]()
+}
+```
+Now, if we want to new up a guitar, it's as easy as 
+```
+const guitar = new Instrument("guitar")
+guitar.play()
+```
+So, here we had a situation where we had multiple objects that all had different interfaces and all had very specific configurations. We used the facade pattern to create one, uniform implementation that allowed us to create any of the objects with very little knowledge of how each one was implemented. This is where the facade pattern should be a key component of your technical repertoire. 

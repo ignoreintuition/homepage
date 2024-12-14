@@ -1,0 +1,85 @@
+---
+layout: post
+title: Teach Me How To PubSub
+date: 2024-01-25 00:00:00 +0300
+description: Teach Me How To PubSub
+img: pubSub.jpg # Add image post (optional)
+tags: [Js, Node] # add tag
+---
+I'm not going to lie before I even knew what a publisher-subscriber pattern was I just liked saying the word: PubSub.  Try it, it's fun.
+
+With that out of the way let me talk for a minute about what a PubSub is. Often in software development, we need to allow communication between two systems without those two systems knowing anything about the other. This may be because the two systems are managed by two different teams but still need to be interoperable. It could also be because we may have an arbitrary number of systems that are listening for particular events. This is important for the separation of concerns, scalability, and maintenance. 
+
+A Publisher-Subscriber model is going to do exactly what it sounds like.  It is going to allow us to publish, or announce, events and then allow other services to subscribe, or listen, for those events. If you have done much work with JavaScript on the front end you have seen this with eventListeners. 
+
+![Publisher Subscriber Model](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gfwy9qsda53av392yyu8.png)
+
+Let's say, for our thoroughly contrived example, we want to create a system where users can shout or whisper a message. We then want to allow other services to listen for all messages that were shouted and/or those that were whispered. We'll start by creating a Publisher, a Subscriber, and a Message Broker:
+
+```
+const EventEmitter = require("events");
+const MessageBroker = {
+  eventEmitter: new EventEmitter(),
+  eventQueue: {},
+  add: function(e) {
+    this.eventQueue[e.event] = this.eventQueue[e.event] || [] 
+    this.eventQueue[e.event] = [...this.eventQueue[e.event], e.data]
+    this.eventEmitter.emit(e.event, e.data)
+  }
+};
+
+function Subscriber() {
+  return {
+    subscribe: (e, cb) => {
+      MessageBroker.eventEmitter.on(e, data => cb(data));
+      return true;
+    }
+  }
+}
+
+function Publisher() {
+  return {
+    publish: (e) => {
+      MessageBroker.add(e)
+    },
+  };
+}
+```
+Here we are using the Node `EventEmitter` to handle the events. The  `MessageBroker` creates our event emitter so that when the publisher adds an event it'll do two things: 1. it will add that to an event queue (which we'll talk about shortly) and 2. it will trigger the event emitter to "emit", or announce, your message. The subscriber then simply has to provide a subscribe method for us to listen for all events of a particular type. The implementation of this for our whisper/shout example would be:
+```
+const pub = Publisher();
+const sub = Subscriber();
+const fn = d => {
+  console.log(d)
+}
+sub.subscribe('whisper', fn)
+sub.subscribe('shout', fn)
+pub.publish({
+  event: "whisper",
+  data: "be very, very quiet",
+});
+
+pub.publish({
+  event: "shout",
+  data: "let it all out",
+});
+```
+In the above code we create our publisher and subscriber. We don't need to create our message broker because it is a singleton and it is accessible to both our functions. We then create two subscribers: one that subscribes to our whisper messages and one that subscribes to our shouts. The second parameter just takes a callback function to relay the message. Finally, we start publishing messages. Whenever we publish an event of type whisper our whisper subscriber with relay it back and, unsurprisingly, our shout subscriber will do the same.
+
+Now I said I would get back to our message queue. Let's add one more function to our message broker object:
+
+```
+const MessageBroker = {
+// --- snippet ---
+  playback: function(e) {
+    this.eventQueue[e].forEach( event => {
+      this.eventEmitter.emit(e, event)
+    })
+  }
+};
+// --- snippet ---
+MessageBroker.playback("shout")
+```
+This is one of the most powerful things about a PubSub. The ability to play back an entire series of events. We create a playback function that takes an event type and then goes through the queue of all our events re-triggering them. Now all of our subscribers who are listening for those events will execute all of those events again. This technique is great for recovering systems, keeping multiple systems in sync, onboarding a new service to include history and a plethora of other advantages.
+
+Play around with the code above. Add more publishers, and more subscribers, and see what kind of results you get. This is a very rudimentary example of what you can do but a more sophisticated implementation will allow you to playback for a timeframe or for multiple event types. There is a ton you can do with this model and, even though there are plenty of rich implementations that you can use in your applications, it's great to have that understanding of how it all works under the hood.
