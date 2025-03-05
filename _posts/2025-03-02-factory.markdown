@@ -1,0 +1,79 @@
+---
+layout: post
+title: Herding Cats with Factory Functions 
+date: 2025-03-01 00:00:00 +0300
+description: In which we discuss how to create a factory function in JavaScript 
+img: factory.jpg # Add image post (optional)
+tags: [Js, Node] # add tag
+---
+
+In an application it is often important to keep track of multiple unique instances of an object, each with their own unique values and state. Certain attributes and methods may be the same but the details about each one vary. Let's take for instance, in my house, I have a plethora of cats. A tortoiseshel, a tuxedo, two gingers, and a tabby. They each have a name, a mood, they are often scattered around the house, but they all share certain things in common. They have similar behaviors (eat, sleep, etc), they stay indoors, they meow, purr, and make indescribable noises by trying to imitate the birds in our yard.
+
+## The Cat Factory
+
+Now, my fellow feline fanatics, you may say to yourself how can we go about getting more cats (I know that is what my wife would say). Enter the factory pattern. The factory pattern is one of the traditional design patterns of software development in which you create an object, or a function, who's job is to create more objects. Just like a factory in the real world it's sole purpose is production. You pass it some characteristics that are unique about the particular instance you are creating and it'll churn out a hot, fresh instance for you with haste.
+
+![Figure 1](/assets/img/factory_fig1.png)
+
+In figure one we show a factory function. This shows how we can pass attributes to the function and create objects. Notice that each cat has their own unique memory location. This is so that we can remember all the specific attributes about that cat and they don't interfere with any of the other objects stored at their own memory locations. So let's start by creating a basic factory. This will be a function, called cat, that we'll pass the cats name and it'll create an instance of cat with that cat's moniker. 
+```
+const cat = (name) => {
+	return {
+		get name() {
+			return name
+		}
+	}
+}
+```
+Initially this may seem a bit contrived. Why go through all this effort when we can just create a with an object with name value.  That will come shortly when we start to flesh out the attributes and methods for our feline friends. In the meantime, let's experiment with creating a house full of cats.
+
+```
+const house = [cat("Fancy"), cat("Phoebe"), cat("Aesop"), cat("Frankie"), cat("Citrus")]
+```
+We have no successfully populated our house with five cats: Fancy, Phoebe, Aesop, Frankie, and Citrus. Each time we call our cat function it is doing the following.
+1. It stores the name value in a closure so that each instance of our cat remembers the parameter passed to it
+2. It returns an object with a getter function that returns that name.
+So, after successfully creating our house full of cats, the next thing we can do is iterate through our house array and see every cat's name:
+```
+house.forEach(cat => console.log(cat.name))
+Fancy
+Phoebe
+Aesop
+Frankie
+Citrus
+```
+Consider, now, that you have 100 cats and you need to know which ones are hungry and which ones have been fed. Let's give each cat an additional attribute of hungry that is a boolean and a method called feed that will allow us to feed each cat and satiate their hunger:
+
+```
+const cat = (name) => {
+	const attributes = {
+		hungry: true,
+	}
+	return {
+		get hungry() {
+			return attributes.hungry
+		},
+		get name() {
+			return name
+		},
+		feed: () => {
+			console.log('nom nom nom')
+			attributes.hungry = false
+		}
+    }
+}
+```
+Now we have a slightly more sophisticated function. We can still create a cat, give them a name, and retrieve their name. Now, however, we also have the ability to check if they are hungry, which is an attribute we store in the closure, and we can fulfill that need by feeding them.
+
+```
+const house = [cat("Fancy"), cat("Phoebe"), cat("Aesop"), cat("Frankie"), cat("Citrus")]
+house.forEach(cat => {
+    if (cat.hungry)
+        cat.feed()
+}
+```
+So, now, we can iterate through our house array, check every cat's hunger, and feed them if they are in need of a snack. This is the basic concept of a factory function.  You can expand on this by adding more attributes, creating more methods to interact with the cats, passing additional parameters to instantiate each cat with specific attributes, and create cats to your heart's content. The thing to remember is that every object returned from the factory function is going to have it's own individual memory block that you can set unique attributes for and, since those can't be accessed outside the clousre, they will never interfere with each other.
+
+That's it for today. If you are interested in more design patterns check out my post on [Pub Subs]({% post_url 2024-01-25-pub-sub %}), [Facade]({% post_url 2024-02-01-facade %}), and [Singletons]({% post_url 2024-02-05-singleton%})
+
+
